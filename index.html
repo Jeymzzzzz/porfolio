@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Hello</title>
+</head>
+
+
+
+
+
+  <div id="particles-js"></div>
+
+<body>
+  <div class="menu-bar">
+    <div class="dropdown">
+      <button class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="dropdown-content">
+        <button class="dark-mode-btn" onclick="toggleDarkMode()">
+          <i class="fas fa-moon"></i> Dark Mode
+        </button>
+        <a href="about.html">About Me</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </div>
+  <header>
+    <h1 class="title1">MY PORTFOLIO</h1>
+  </header>
+  <section class="container">
+    <img src="./images/991022be-60a1-4910-a2b8-51600b4102b5.jpeg" alt="profile" class="profile-img" onclick="handleProfileClick()">
+    <div class="description">
+      <h2>James Quintero</h2>
+      <p>Hey, I am James and I am learning all things new again</p>
+    </div>
+  </section>
+
+  <section class="gallery">
+    <div class="image-container">
+      <img src="images/MOTOR.jpeg" alt="Image 1" class="gallery-img" onclick="expandImage(this)">
+      <div class="text-bubble">This is one of my favorite hobby, cleaning and kalkaling my motorcycle makes me happy. I love this bike because he's the one that saves me from stress. But this bikes makes my wallet clean because of accessories and parts he wants huhu.</div>
+    </div>
+    <div class="image-container">
+      <img src="images/my baby topakin.jpeg" alt="Image 2" class="gallery-img" onclick="expandImage(this)">
+      <div class="text-bubble">Second hobby? Of course hanging out with the girl I love most. I do not have many friends, that's why she is my everything. I love spending my whole day with her, cuz he makes me feel safe, special, loved. I know it sounds weird that this is the one of my hobby, but it is BOII!</div>
+    </div>
+    <div class="image-container">
+      <img src="images/ml.jpeg" alt="Image 3" class="gallery-img" onclick="expandImage(this)">
+      <div class="text-bubble">This is the my third hobby, I love playing this game because I met my girl in this game. That day I am playing this game then one of my friends invited her, then we use to know each other we always play as in everyday, every night.</div>
+    </div>
+  </section>
+
+  <section class="game-section">
+      <h2 class="game-title">T-Rex Runner Game</h2>
+      <div class="score">Score: 0</div>
+      <div class="game-container" id="container">
+        <div class="leaderboard"></div>
+        <div class="dino"></div>
+        <div class="game-over">Game Over!</div>
+        <div id="offline-resources">
+          <img id="offline-resources-1x" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQAAAABAAgMAAADsH0D0AAAACVBMVEX////39/dTU1OabbyfAAAAAXRSTlMAQObYZgAAAPJJREFUeF7t1zEKwzAMBdA4gXyBo/QSvVtuEK/h3qHX6NU6VMo4kAQym8HWo/2D+BAJhVSoYCtT9ljQwUAD/bqeDEwCFmWgjO4VE4PB0MFWpiYMGBgYYGBg4EuAAQMGDBgwYMCAgY8Ag4EyOnWcwGCojO4VA2UwMFDGW4YJaAYYGBhgYGDgS4CBgQEGDAx8HxIYDAzUQRkd5TBgYICBgYEJgYGyxQUMGDBgwIABAwYMGDBgwIABAwYMGDBgwIABAwYMGDBgwIABAwYMGDDwRYBDFWUwGAyGytR08PUfM5Up+7tgYGCAgYGBLwEGDBgwYMDABwGvxD0X1lQ+AgAAAABJRU5ErkJggg==" />
+        </div>
+      </div>
+      <button onclick="startGame()" class="submit-btn">Start Game</button>
+      <div class="game-instructions">Press SPACE to jump or tap on mobile</div>
+    </section>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
